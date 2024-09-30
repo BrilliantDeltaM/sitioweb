@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
+:root{
+    --padding-container: 20px 0;
+    --color-title: #001A49;
+
+}
+
+body{
+    font-family: "Saira Condensed", sans-serif;
+    background: #ede8e4;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+
+}
+.nav{
+    --padding-container:0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.nav__title{
+    font-weight: 300;
+}
+
+.nav__items{
+    list-style: none;
+}
+.nav__link{
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+.nav__links{
+    color: black;
+    text-decoration: none;
+}
+
+.nav__menu{
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+
+}
+.nav__img{
+    display: block;
+    width: 30px;
+}
+
+.nav__close{
+    display: var(--show, none);
+
+}
+
+/* Acerca de */
+
+.principio__container{
+    width: 100%;
+    height: 700px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-image: url(../images/CM24_CARTEL_v3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.p__text h2{
+    margin: 0;
+    line-height: 0.8;
+}
+.principio__titulo{
+    flex: 1;
+    font-family: "Saira Stencil One", sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+.principio__paragraph{
+    flex: 1;
+    color: #ee650a;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1;
+}
+.p__text2 p{
+    margin: 0;
+    line-height: 0.8;
+}
+
+
+.principio__paragraph2{
+    flex: 1;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.principio__subtitle{
+    flex: 1;
+    color: #ee650a;
+    font-size: 5rem;
+    line-height: 1;
+}
+
+
+.subtitle{
+    color: #ee650a;
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+/* Knowledge */
+
+.pingo{
+    background: #ee650a;
+}
+.slider {
+    position: relative;
+    width: 1170px;
+    height: 500px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex; /* Usar flexbox para alinear las imágenes en una fila */
+    transition: transform 1s ease-in-out; /* Transición suave para el movimiento */
+}
+
+.slides img {
+    height: 500px;
+    width: 1170px;
+    object-fit: cover;
+    flex-shrink: 0; /* Evitar que las imágenes se reduzcan */
+}
+
+/* Botones de navegación */
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 10px 15px;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.prev {
+    left: 0;
+}
+.next {
+    right: 0;
+}
+
+
+
+
+
+/* Informacion */
+
+.informacion__container {
+    display: flex; /* Usa flexbox */
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-between; /* Espaciado entre elementos */
+    align-items: center; /* Alinear verticalmente */
+}
+
+.informacion__figure, /* Figura que contiene la imagen */
+.informacion__texts { /* Div que contiene el texto */
+    flex: 1; /* Ocupa el mismo espacio */
+    min-width: 300px; /* Ancho mínimo para responsividad */
+}
+
+.informacion__img {
+    filter: brightness(1);
+    mix-blend-mode: multiply;
+    width: 100%; 
+    max-width: 550px;
+    height: auto; 
+    object-fit: cover; 
+}
+
+.informacion__paragraph{
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+.informacion__paragraph2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.5; 
+}
+
+/* Mensaje*/
+
+.mensaje__container{
+    padding: 0;
+    filter: brightness(1);
+    mix-blend-mode: multiply;
+    background-image: url(../images/IMG_1727.png); /* Aquí se establece la imagen de fondo */
+    background-size: 550px; /* Asegura que la imagen cubra todo el contenedor */
+    background-position: calc(100% - 80px) calc(100% + 10px);;
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+/* Invitados */
+
+.invitados__titulo{
+    margin: 0 auto;
+    max-width: 1500px;
+    background: #ee650a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.invitados{
+    background-color: #ee650a;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.invitados__container{
+    margin: 0 auto;
+    max-width: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.invitados__container div {
+    margin-top: 5px;
+    width: 430px;
+    height: 440px;
+}
+
+.invitados__img{
+    object-fit: contain;
+    width: 430px;
+}
+.artista {
+    position: relative; /* Asegura que el enlace tenga un contexto de posicionamiento */
+    overflow: hidden; /* Evita que la imagen se salga del contenedor al agrandarse */
+    transition: transform 0.3s ease; /* Transición suave para el efecto de agrandamiento */
+}
+
+.artista:hover {
+    transform: scale(1.02); /* Aumenta el tamaño de la imagen al pasar el cursor */
+}
+.invitados__container2{
+    margin: 5px auto;
+    max-width: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.invitados__container2 div {
+    width: 650px;
+    height: 700px;
+}
+
+.invitados__imgf{
+    flex: 1 0 100%;
+    width: 650px;
+}

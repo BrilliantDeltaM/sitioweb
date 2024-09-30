@@ -1,0 +1,44 @@
+@import "../CSS/bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
+:root{
+    --bs-body-font-family: "Saira Condensed", sans-serif;
+}
+.bgremove{
+    filter: brightness(1);
+    mix-blend-mode: multiply;
+}
+.bgcolor{
+    background: #ede8e4;
+}
+
+.navcolor{
+    background: #ee650a;
+}
+
+.navtext{
+    color: white;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.navfont{
+    font-family: 'Saira Stencil One', sans-serif ;
+    line-height: 0.8;
+    font-weight: 400;
+}
+
+.gal-img{
+    max-width: 100%;
+    cursor: pointer ;
+    transition: opacity 0.5s ease; /* Transición suave */
+    border: 2px solid #ede8e4;;
+
+}
+.gal-img:hover{
+    opacity: 0.8;
+}
+
+.contacto.text{
+    color: #ee650a;
+}
